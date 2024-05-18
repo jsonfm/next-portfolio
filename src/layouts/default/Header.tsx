@@ -15,7 +15,7 @@ export const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="sticky top-0 md:relative w-full h-20 flex items-center dark:bg-secondary bg-white dark:md:bg-transparent md:bg-transparent">
+    <header className="sticky top-0 md:relative w-full h-20 flex items-center dark:bg-secondary  bg-white dark:md:bg-transparent md:bg-transparent">
       <meta
         name="theme-color"
         content={theme === "dark" ? "#060916" : "#ffffff"}

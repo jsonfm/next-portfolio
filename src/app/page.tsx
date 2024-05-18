@@ -6,7 +6,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <section className="py-6">
+      <section className="py-6 h-[300px] flex items-center">
         <div className="container-md">
           <p className=" md:text-2xl text-gray-400">Hello there,</p>
           <p className="text-2xl md:text-4xl text-gray-500">
@@ -18,7 +18,7 @@ const Home = () => {
       </section>
       <section className="py-6">
         <div className="container-md">
-          <div className="h-[1px] w-full bg-gray-400 mb-12"></div>
+          <div className="h-[1px] w-full bg-gray-600 mb-16"></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex flex-col gap-6">
               {projects?.slice(0, 4)?.map((item, index) => (

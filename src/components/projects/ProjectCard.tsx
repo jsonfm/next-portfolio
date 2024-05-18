@@ -9,14 +9,14 @@ interface Props {
 export const ProjectCard = ({ project, isMiddle = false }: Props) => {
   return (
     <div
-      className={`w-80 md:w-full  ${
+      className={`w-full md:w-full  ${
         isMiddle ? "md:h-96" : "h-80"
-      } rounded-lg overflow-hidden `}
+      } rounded-md overflow-hidden `}
     >
-      <div className={`w-full h-[80%] rounded-lg overflow-hidden`}>
+      <div className={`w-full h-[80%] rounded-md overflow-hidden`}>
         <img
           src={project?.image}
-          className="w-full h-full object-contain bg-white"
+          className="w-full h-full object-cover bg-white"
           alt={`project-image`}
         />
       </div>
