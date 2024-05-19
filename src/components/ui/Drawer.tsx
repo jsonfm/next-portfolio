@@ -14,8 +14,8 @@ export const Drawer = ({ show }: Props) => {
   return (
     <div
       className={`${
-        showDrawer ? "fixed left-0" : "absolute left-full"
-      } top-0  h-screen flex  w-full overflow-hidden duration-200`}
+        showDrawer ? "left-0" : "left-full"
+      } fixed  top-0 h-screen flex  w-full overflow-hidden duration-200`}
     >
       <div
         className="w-1/3 md:w-full h-full backdrop-blur-md"
