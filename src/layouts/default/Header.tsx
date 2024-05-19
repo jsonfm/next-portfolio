@@ -7,6 +7,7 @@ import {
   IconBurger,
   IconArrowsCross,
 } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export const Header = () => {
@@ -14,6 +15,11 @@ export const Header = () => {
   const toggleShowMenu = () => setShowMenu(!showMenu);
   const { theme, toggleTheme } = useTheme();
 
+  const router = useRouter();
+  const goToSection = (href: string) => {
+    setShowMenu(false);
+    router.push(href);
+  };
   return (
     <header className="sticky top-0 md:relative w-full h-20 flex items-center dark:bg-secondary  bg-white dark:md:bg-transparent md:bg-transparent">
       <meta
@@ -21,7 +27,7 @@ export const Header = () => {
         content={theme === "dark" ? "#060916" : "#ffffff"}
       />
       <nav className="relative container-md w-full h-full flex items-center justify-between ">
-        <div className="flex flex-col">
+        <div className="flex flex-col" onClick={() => goToSection("/")}>
           <p>Jason</p>
           <p className="text-xs">AI Engineer | Fullstack</p>
         </div>
@@ -35,9 +41,24 @@ export const Header = () => {
           } h-screen w-full md:w-auto md:h-auto duration-200`}
         >
           <div className="flex flex-col md:flex-row md:justify-center w-full gap-6 h-[60%] md:h-auto">
-            <a>Projects</a>
-            <a>About</a>
-            <a>Experience</a>
+            <a
+              onClick={() => goToSection(`/`)}
+              className="cursor-pointer hover:scale-105 duration-200"
+            >
+              Projects
+            </a>
+            <a
+              onClick={() => goToSection(`/about`)}
+              className="cursor-pointer hover:scale-105 duration-200"
+            >
+              About
+            </a>
+            <a
+              onClick={() => goToSection(`/experience`)}
+              className="cursor-pointer hover:scale-105 duration-200"
+            >
+              Experience
+            </a>
           </div>
           <div className="flex justify-center gap-4">
             <a

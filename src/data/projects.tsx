@@ -27,6 +27,21 @@ export const projects: IProject[] = [
     topic: "Mobile",
   },
   {
+    name: "Sinculpa Restaurant Menu",
+    description:
+      "I made this project for a restaurant in my city, I used GatsbyJS and Tailwind CSS, and I deployed it in github pages.",
+    image: "https://sinculpasite.files.wordpress.com/2022/09/sinculp.jpeg",
+    repository: "https://github.com/jsonfm/sinculpa",
+    demo: "https://jsonfm.github.io/sinculpa/",
+    tags: [
+      {
+        name: "Gatsby.js",
+        color: "#4A10A0 ",
+      },
+    ],
+    topic: "Frontend",
+  },
+  {
     name: "Petgram",
     description:
       "A social network for pets, which UI is inspired by instagram.",
@@ -44,6 +59,57 @@ export const projects: IProject[] = [
         color: "#FF338D",
       },
     ],
+    topic: "Frontend",
+  },
+
+  {
+    name: "REMIO",
+    description:
+      "Some time ago, I worked on the development of remote labs at my university. As a result of this work, I generated useful tools for the development of IOT devices in real time.",
+    image: "https://jsonfm.github.io/remio/assets/images/arch-1.png",
+    repository: "https://github.com/jsonfm/remio",
+    demo: "https://jsonfm.github.io/remio/",
+    tags: [
+      {
+        name: "python",
+        color: "#1F387B",
+      },
+    ],
+    topic: "Backend",
+  },
+  {
+    name: "Food.",
+    description: "🍖 😋 A restaurant website made with HTML, CSS and JS.",
+    image:
+      "https://github.com/jsonfm/food/blob/master/docs/images/food.png?raw=true",
+    repository: "https://github.com/jsonfm/food",
+    demo: "https://jsonfm.github.io/food/",
+    topic: "Frontend",
+  },
+  {
+    name: "Shareme Social Network",
+    description:
+      "A social media app made with React.js and Sanity, design inspired by pinterest. Allows users to create and like posts. It also allows authentication through Google OAuth2. Frontend uses tailwind for styles. The site is full responsive.",
+    image:
+      "https://raw.githubusercontent.com/jsonfm/shareme-social-network/master/docs/images/ss1.jpeg",
+    demo: "https://sharemenet.netlify.app/",
+    repository: "https://github.com/jsonfm/shareme-social-network",
+    topic: "Frontend",
+  },
+  {
+    name: "Filmy",
+    description: "A movies app made with Javascript.",
+    image: "https://github.com/jsonfm/filmy/raw/master/images/filmy.jpeg",
+    repository: "https://github.com/jsonfm/filmy",
+    demo: "https://jsonfm.github.io/filmy/",
+    topic: "Frontend",
+  },
+  {
+    name: "Yogurt Jordy",
+    image:
+      "https://i0.wp.com/sinculpasite.files.wordpress.com/2022/12/yogurtss.jpeg?ssl=1",
+    description: "A fastfood restaurant website with an interactive menu.",
+    demo: "https://yogurtdjordi.com/",
     topic: "Frontend",
   },
 ];

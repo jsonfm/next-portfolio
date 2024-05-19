@@ -23,7 +23,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="overflow-x-hidden min-h-[50vh]">{children}</main>
+      <main className="overflow-x-hidden min-h-[60vh]">{children}</main>
       <Footer />
     </>
   );

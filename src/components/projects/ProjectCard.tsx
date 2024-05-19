@@ -16,8 +16,9 @@ export const ProjectCard = ({ project, isMiddle = false }: Props) => {
       <div className={`w-full h-[80%] rounded-md overflow-hidden`}>
         <img
           src={project?.image}
-          className="w-full h-full object-cover bg-white"
+          className="w-full h-full object-contain dark:bg-secondary bg-white"
           alt={`project-image`}
+          loading="lazy"
         />
       </div>
       <div className="py-4">
