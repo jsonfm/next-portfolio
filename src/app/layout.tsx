@@ -16,12 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleAnalytics gaId="G-T04T57NDVE" />
       <DrawerContextProvider>
         <body className={`overflow-x-hidden`}>
           <Layout>{children}</Layout>
         </body>
       </DrawerContextProvider>
+      <GoogleAnalytics gaId="G-T04T57NDVE" />
     </html>
   );
 }
