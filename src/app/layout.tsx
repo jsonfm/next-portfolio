@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Layout } from "@/layouts/default";
-import "./globals.css";
 import { DrawerContextProvider } from "@/context/drawer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Portfolio | @jsonfm",
@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-T04T57NDVE" />
       <DrawerContextProvider>
         <body className={`overflow-x-hidden`}>
           <Layout>{children}</Layout>
