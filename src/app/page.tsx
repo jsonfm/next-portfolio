@@ -1,4 +1,7 @@
+"use client";
 import { ProjectCard } from "@/components/projects/ProjectCard";
+import { Drawer } from "@/components/ui/Drawer";
+import { useDrawerContext } from "@/context/drawer";
 import { projects } from "@/data/projects";
 import { IProject } from "@/types/projects";
 import React from "react";
@@ -49,6 +52,7 @@ const Home = () => {
         </div>
       </section>
       <section className="py-6"></section>
+      <Drawer />
     </>
   );
 };

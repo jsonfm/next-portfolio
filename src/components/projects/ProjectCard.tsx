@@ -1,3 +1,5 @@
+"use client";
+import { useDrawerContext } from "@/context/drawer";
 import { IProject } from "@/types/projects";
 import React from "react";
 
@@ -7,11 +9,17 @@ interface Props {
 }
 
 export const ProjectCard = ({ project, isMiddle = false }: Props) => {
+  const { setShowDrawer, setCurrentProject } = useDrawerContext();
+  const updateCurrentProject = () => {
+    setCurrentProject(project);
+    setShowDrawer(true);
+  };
   return (
     <div
-      className={`w-full md:w-full  ${
+      className={`cursor-pointer w-full md:w-full  ${
         isMiddle ? "md:h-96" : "h-80"
       } rounded-md overflow-hidden `}
+      onClick={updateCurrentProject}
     >
       <div className={`w-full h-[80%] rounded-md overflow-hidden`}>
         <img
