@@ -12,6 +12,7 @@ import { useState } from "react";
 
 export const Header = () => {
   const pathname = usePathname();
+
   const [showMenu, setShowMenu] = useState(false);
   const toggleShowMenu = () => setShowMenu(!showMenu);
   const { theme, toggleTheme } = useTheme();
@@ -49,9 +50,7 @@ export const Header = () => {
           <div className="flex flex-col md:flex-row md:justify-center w-full gap-6 h-[60%] md:h-auto">
             <a
               onClick={() => goToSection(`/`)}
-              className={`${navLinkClass} ${
-                pathname.startsWith("/") && "font-bold"
-              }`}
+              className={`${navLinkClass} ${pathname === "/" && "font-bold"}`}
             >
               Projects
             </a>
