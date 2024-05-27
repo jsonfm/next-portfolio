@@ -31,7 +31,7 @@ export const Header = () => {
       />
       <nav className="relative container-md w-full h-full flex items-center justify-between ">
         <div
-          className="flex flex-col cursor-pointer hover:font-bold duration-200"
+          className="flex flex-col cursor-pointer hover:font-bold duration-200 select-none"
           onClick={() => goToSection("/")}
         >
           <p>Jason</p>
