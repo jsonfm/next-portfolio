@@ -10,11 +10,12 @@ const Home = () => {
     <>
       <section className="py-6 h-[300px] flex items-center">
         <div className="container-md">
-          <p className=" md:text-2xl text-gray-400">Hello there,</p>
-          <p className="text-2xl md:text-4xl text-gray-500">
-            I am a software developer with an interest in creating{" "}
-            <b className="font-bold">AI</b> products and cross-platform
-            applications.
+          <p className=" md:text-2xl text-gray-500">Hello there,</p>
+          <p className="text-2xl md:text-4xl dark:text-gray-300 text-gray-600">
+            {`I'm Jason, a fullstack and data engineer passionate about building scalable solutions and transforming data into actionable insights.`}
+          </p>
+          <p className="text-gray-400 mt-6 text-lg">
+            web, mobile and data development
           </p>
         </div>
       </section>

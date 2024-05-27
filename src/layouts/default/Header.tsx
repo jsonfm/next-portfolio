@@ -7,10 +7,11 @@ import {
   IconBurger,
   IconArrowsCross,
 } from "@tabler/icons-react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 
 export const Header = () => {
+  const pathname = usePathname();
   const [showMenu, setShowMenu] = useState(false);
   const toggleShowMenu = () => setShowMenu(!showMenu);
   const { theme, toggleTheme } = useTheme();
@@ -20,6 +21,8 @@ export const Header = () => {
     setShowMenu(false);
     router.push(href);
   };
+  const navLinkClass = `cursor-pointer hover:scale-105 duration-200`;
+
   return (
     <header className="sticky top-0 md:relative w-full h-20 flex items-center dark:bg-secondary  bg-white dark:md:bg-transparent md:bg-transparent">
       <meta
@@ -27,9 +30,12 @@ export const Header = () => {
         content={theme === "dark" ? "#060916" : "#ffffff"}
       />
       <nav className="relative container-md w-full h-full flex items-center justify-between ">
-        <div className="flex flex-col" onClick={() => goToSection("/")}>
+        <div
+          className="flex flex-col cursor-pointer hover:font-bold duration-200"
+          onClick={() => goToSection("/")}
+        >
           <p>Jason</p>
-          <p className="text-xs">AI Engineer | Fullstack</p>
+          <p className="text-xs">Software Engineer</p>
         </div>
         <button onClick={toggleShowMenu} className="md:hidden outline-none">
           {showMenu && <IconArrowsCross />}
@@ -43,19 +49,25 @@ export const Header = () => {
           <div className="flex flex-col md:flex-row md:justify-center w-full gap-6 h-[60%] md:h-auto">
             <a
               onClick={() => goToSection(`/`)}
-              className="cursor-pointer hover:scale-105 duration-200"
+              className={`${navLinkClass} ${
+                pathname.startsWith("/") && "font-bold"
+              }`}
             >
               Projects
             </a>
             <a
               onClick={() => goToSection(`/about`)}
-              className="cursor-pointer hover:scale-105 duration-200"
+              className={`${navLinkClass} ${
+                pathname.startsWith("/about") && "font-bold"
+              }`}
             >
               About
             </a>
             <a
               onClick={() => goToSection(`/experience`)}
-              className="cursor-pointer hover:scale-105 duration-200"
+              className={`${navLinkClass} ${
+                pathname.startsWith("/experience") && "font-bold"
+              }`}
             >
               Experience
             </a>
