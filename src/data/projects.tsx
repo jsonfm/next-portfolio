@@ -55,10 +55,12 @@ export const projects: IProject[] = [
   },
   {
     name: "Little Lemon",
-    description: "A react native app",
+    description:
+      "A mobile application made as a final project of the React Native By Meta specialization in Coursera. It is a menu application that consumes data through an API.",
     image:
       "https://github.com/jsonfm/little-lemon-app/raw/master/docs/images/preview.gif",
     topic: "Mobile",
+    repository: "https://github.com/jsonfm/little-lemon-app",
   },
   {
     name: "Sinculpa Restaurant Menu",
