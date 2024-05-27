@@ -1,6 +1,24 @@
 import { IProject } from "@/types/projects";
+import QikImage from "@/assets/projects/qik.png";
+import AnimeImage from "@/assets/projects/anime.png";
 
 export const projects: IProject[] = [
+  {
+    name: "Qikstarts",
+    description:
+      "A customer loyalty system for restaurants, which helps brand positioning, through reviews on google maps.",
+    image: QikImage.src,
+    demo: "https://qikstarts.com/",
+    topic: "Fullstack",
+  },
+  {
+    name: "Filmy",
+    description: "A movies app made with Javascript.",
+    image: "https://github.com/jsonfm/filmy/raw/master/images/filmy.jpeg",
+    repository: "https://github.com/jsonfm/filmy",
+    demo: "https://jsonfm.github.io/filmy/",
+    topic: "Frontend",
+  },
   {
     name: "Lyriks",
     description:
@@ -18,6 +36,22 @@ export const projects: IProject[] = [
       "https://github.com/jsonfm/flask-image-bgremover/raw/master/docs/images/preview.png",
     repository: "https://github.com/jsonfm/flask-image-bgremover",
     topic: "AI",
+  },
+  {
+    name: "AnimeMySelf",
+    description:
+      "An image to image app transformer using Stable Diffusion 2. It tranforms selfies into anime.",
+    image: AnimeImage.src,
+    demo: "https://selfie2anime.vrheaven.io/",
+    topic: "AI",
+  },
+  {
+    name: "Yogurt Jordy",
+    image:
+      "https://i0.wp.com/sinculpasite.files.wordpress.com/2022/12/yogurtss.jpeg?ssl=1",
+    description: "A fastfood restaurant website with an interactive menu.",
+    demo: "https://63cd83766474e100084bc5e0--beautiful-flan-402a12.netlify.app/",
+    topic: "Frontend",
   },
   {
     name: "Little Lemon",
@@ -77,15 +111,7 @@ export const projects: IProject[] = [
     ],
     topic: "Backend",
   },
-  {
-    name: "Food.",
-    description: "🍖 😋 A restaurant website made with HTML, CSS and JS.",
-    image:
-      "https://github.com/jsonfm/food/blob/master/docs/images/food.png?raw=true",
-    repository: "https://github.com/jsonfm/food",
-    demo: "https://jsonfm.github.io/food/",
-    topic: "Frontend",
-  },
+
   {
     name: "Shareme Social Network",
     description:
@@ -94,22 +120,6 @@ export const projects: IProject[] = [
       "https://raw.githubusercontent.com/jsonfm/shareme-social-network/master/docs/images/ss1.jpeg",
     demo: "https://sharemenet.netlify.app/",
     repository: "https://github.com/jsonfm/shareme-social-network",
-    topic: "Frontend",
-  },
-  {
-    name: "Filmy",
-    description: "A movies app made with Javascript.",
-    image: "https://github.com/jsonfm/filmy/raw/master/images/filmy.jpeg",
-    repository: "https://github.com/jsonfm/filmy",
-    demo: "https://jsonfm.github.io/filmy/",
-    topic: "Frontend",
-  },
-  {
-    name: "Yogurt Jordy",
-    image:
-      "https://i0.wp.com/sinculpasite.files.wordpress.com/2022/12/yogurtss.jpeg?ssl=1",
-    description: "A fastfood restaurant website with an interactive menu.",
-    demo: "https://yogurtdjordi.com/",
     topic: "Frontend",
   },
 ];
