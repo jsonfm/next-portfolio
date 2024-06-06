@@ -1,8 +1,32 @@
 import { IProject } from "@/types/projects";
 import QikImage from "@/assets/projects/qik.png";
 import AnimeImage from "@/assets/projects/anime.png";
+import Sinculpa from "@/assets/projects/sinculpa.png";
 
 export const projects: IProject[] = [
+  {
+    name: "Yogurt Jordy",
+    image:
+      "https://i0.wp.com/sinculpasite.files.wordpress.com/2022/12/yogurtss.jpeg?ssl=1",
+    description: "A fastfood restaurant website with an interactive menu.",
+    demo: "https://63cd83766474e100084bc5e0--beautiful-flan-402a12.netlify.app/",
+    topic: "Frontend",
+  },
+  {
+    name: "Sinculpa Restaurant Menu",
+    description:
+      "I made this project for a restaurant in my city, I used GatsbyJS and Tailwind CSS, and I deployed it in github pages.",
+    image: Sinculpa.src,
+    repository: "https://github.com/jsonfm/sinculpa",
+    demo: "https://jsonfm.github.io/sinculpa/",
+    tags: [
+      {
+        name: "Gatsby.js",
+        color: "#4A10A0 ",
+      },
+    ],
+    topic: "Frontend",
+  },
   {
     name: "Qikstarts",
     description:
@@ -46,38 +70,6 @@ export const projects: IProject[] = [
     topic: "AI",
   },
   {
-    name: "Yogurt Jordy",
-    image:
-      "https://i0.wp.com/sinculpasite.files.wordpress.com/2022/12/yogurtss.jpeg?ssl=1",
-    description: "A fastfood restaurant website with an interactive menu.",
-    demo: "https://63cd83766474e100084bc5e0--beautiful-flan-402a12.netlify.app/",
-    topic: "Frontend",
-  },
-  {
-    name: "Little Lemon",
-    description:
-      "A mobile application made as a final project of the React Native By Meta specialization in Coursera. It is a menu application that consumes data through an API.",
-    image:
-      "https://github.com/jsonfm/little-lemon-app/raw/master/docs/images/preview.gif",
-    topic: "Mobile",
-    repository: "https://github.com/jsonfm/little-lemon-app",
-  },
-  {
-    name: "Sinculpa Restaurant Menu",
-    description:
-      "I made this project for a restaurant in my city, I used GatsbyJS and Tailwind CSS, and I deployed it in github pages.",
-    image: "https://sinculpasite.files.wordpress.com/2022/09/sinculp.jpeg",
-    repository: "https://github.com/jsonfm/sinculpa",
-    demo: "https://jsonfm.github.io/sinculpa/",
-    tags: [
-      {
-        name: "Gatsby.js",
-        color: "#4A10A0 ",
-      },
-    ],
-    topic: "Frontend",
-  },
-  {
     name: "Petgram",
     description:
       "A social network for pets, which UI is inspired by instagram.",
@@ -112,16 +104,5 @@ export const projects: IProject[] = [
       },
     ],
     topic: "Backend",
-  },
-
-  {
-    name: "Shareme Social Network",
-    description:
-      "A social media app made with React.js and Sanity, design inspired by pinterest. Allows users to create and like posts. It also allows authentication through Google OAuth2. Frontend uses tailwind for styles. The site is full responsive.",
-    image:
-      "https://raw.githubusercontent.com/jsonfm/shareme-social-network/master/docs/images/ss1.jpeg",
-    demo: "https://sharemenet.netlify.app/",
-    repository: "https://github.com/jsonfm/shareme-social-network",
-    topic: "Frontend",
   },
 ];

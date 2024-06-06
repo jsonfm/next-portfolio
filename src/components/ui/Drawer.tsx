@@ -21,16 +21,16 @@ export const Drawer = ({ show }: Props) => {
         className="w-1/3 md:w-full h-full backdrop-blur-md"
         onClick={close}
       ></div>
-      <div className="w-2/3 md:w-1/3 max-w-[400px] h-full dark:bg-secondary bg-white ">
-        <div className="h-48 md:h-80 border border-gray-600">
+      <div className="w-2/3 md:w-1/3 max-w-[400px] h-full bg-neutral-950">
+        <div className="h-48 md:h-80 ">
           <img
             src={currentProject?.image}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="p-6">
-          <h4 className="mb-4">{currentProject?.name}</h4>
-          <p className="text-gray-500">{currentProject?.description}</p>
+          <h4 className="mb-4 uppercase">{currentProject?.name}</h4>
+          <p className="">{currentProject?.description}</p>
         </div>
         <div className="flex items-center justify-center gap-6 px-6 mt-6">
           {!!currentProject?.demo && (
@@ -41,7 +41,7 @@ export const Drawer = ({ show }: Props) => {
               className="cursor-pointer flex items-center gap-2"
             >
               <IconLink />
-              Demo
+              Preview
             </a>
           )}
           {!!currentProject?.repository && (
