@@ -55,7 +55,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MagicButton>Contact Me</MagicButton>
+                <MagicButton>Get in Touch</MagicButton>
               </a>
             </div>
           </motion.div>
