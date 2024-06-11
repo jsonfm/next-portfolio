@@ -50,7 +50,13 @@ const Home = () => {
               and data analyst. Entrepreneurial spirit. Web & mobile developer
             </motion.p>
             <div className="mt-16 flex justify-center md:justify-start">
-              <MagicButton>Contact Me</MagicButton>
+              <a
+                href="mailto:franciscomacas3@gmail.com?subject=Get%20in%20Touch&body=Hey%20Jason%2C%20..."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MagicButton>Contact Me</MagicButton>
+              </a>
             </div>
           </motion.div>
         </div>

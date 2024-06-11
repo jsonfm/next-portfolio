@@ -6,7 +6,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Portfolio | @jsonfm",
-  description: "Personal Web Portfolio",
+  description:
+    "Jason's personal web portfolio. I am an engineer and software developer. Efficient and methodical learner. Curious, and dedicated problem solver. Data analyst, and application builder.",
 };
 
 export default function RootLayout({
